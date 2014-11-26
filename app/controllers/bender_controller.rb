@@ -1,0 +1,2 @@
+class BenderController < ApplicationController
+end
