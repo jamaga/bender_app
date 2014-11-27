@@ -16,11 +16,6 @@ ActiveRecord::Schema.define(version: 20141127153833) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "benders", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "messages", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
