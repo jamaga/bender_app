@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  match '/curl_example' => 'request_example#curl_get_example', via: :get
-  match '/curl_example' => 'request_example#curl_post_example', via: :post
+
+  root 'bender#index'
+
+  match '/curl_example' => 'bender#curl_get_example', via: :get
+  match '/curl_example' => 'bender#curl_post_example', via: :post
 end
 
 
@@ -66,4 +69,3 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
