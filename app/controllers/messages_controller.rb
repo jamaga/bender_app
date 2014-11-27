@@ -1,4 +1,4 @@
-class BenderController < ApplicationController
+class MessagesController < ApplicationController
 
   def curl_get_example
     render text: 'Thanks for sending a GET request with cURL!'
@@ -7,5 +7,5 @@ class BenderController < ApplicationController
   def curl_post_example
     render text: "Thanks for sending a POST request with cURL! Payload: #{request.body.read}"
   end
-  
+
 end

@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'bender#index'
-
-  match '/curl_example' => 'bender#curl_get_example', via: :get
-  match '/curl_example' => 'bender#curl_post_example', via: :post
+  match '/curl_example' => 'messages#curl_get_example', via: :get
+  match '/curl_example' => 'messages#curl_post_example', via: :post
 end
 
 
