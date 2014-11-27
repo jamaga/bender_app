@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  match '/curl_example' => 'request_example#curl_get_example', via: :get
+  match '/curl_example' => 'request_example#curl_post_example', via: :post
+end
+
+
+
+
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
